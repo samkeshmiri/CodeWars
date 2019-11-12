@@ -1,4 +1,4 @@
-package com.sam.sixkyu;
+package com.sam.sixKyu;
 
 import java.util.Arrays;
 
