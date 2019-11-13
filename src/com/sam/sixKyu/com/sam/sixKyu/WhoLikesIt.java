@@ -31,8 +31,7 @@ public class WhoLikesIt {
 		} else if (arr.length == 3) {
 			return strings[0] + ", " + strings[1] + " and " + strings[2] + " like this";
 		} else if (arr.length > 3) {
-			int count = arr.length - 2;
-			return strings[0] + ", " + strings[1] + " and " + count + " others like this";
+			return strings[0] + ", " + strings[1] + " and " + (arr.length-2) + " others like this";
 		} else {
 			return "no one likes this";
 		}
