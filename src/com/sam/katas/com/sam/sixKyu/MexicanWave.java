@@ -2,10 +2,21 @@ package com.sam.sixKyu;
 
 import java.util.ArrayList;
 
+/**
+ * https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+ * 
+ * 
+ * wave("hello") => []string{"Hello", "hEllo", "heLlo", "helLo", "hellO"}
+ * works with spaces and multiple words
+ * 
+ * @author s.keshmiri
+ *
+ */
+
 public class MexicanWave {
 	
 	public static void main(String[] args) {
-		MexicanWave.wave(" gap ");
+		MexicanWave.wave("hello");
 	}
 	
 	public static String[] wave(String str) {
@@ -21,7 +32,6 @@ public class MexicanWave {
 		}
 		
 		String[] x = removeNulls(arr);
-		System.out.println(x.length);
 		return x;
 	}
 	
@@ -30,6 +40,6 @@ public class MexicanWave {
 		for (String s : array) {
 			if(s != null) noNulls.add(s);
 		}
-		return noNulls.toArray(new String[0]);
+		return noNulls.toArray(new String[0]); // 
 	}
 }
