@@ -6,11 +6,10 @@ import java.util.Map;
 public class Keypad {
 	
 	public static void main(String[] args) {
-		System.out.println(presses("xqLJSiB,kAWCm@Vli:GYUGEsn"));
+		System.out.println(presses("hello world 79"));
 	}
 	
 	public static int presses(String phrase) {
-		System.out.println(phrase);
 		Map<String, Integer> map = loadMap();
 		int count = 0;
 		String[] arr = phrase.split("");
