@@ -36,7 +36,7 @@ public class SudokuValidator {
 		for (int i = 0; i < sudoku.length; i++) {
 			Set<Integer> set = new HashSet<>();
 			for (int x = 0; x < 9; x++) {
-				set.add(sudoku[i][x]);
+				set.add(sudoku[x][i]);
 			}
 			if (set.size() != 9) {
 				return false;
@@ -69,6 +69,7 @@ public class SudokuValidator {
 					return false;
 				}
 			}
+			
 		}
 		return true;
 	}
