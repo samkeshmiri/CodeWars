@@ -39,11 +39,11 @@ public class SudokuValidator {
 
 	public static boolean checkRow(int[][] sudoku) {
 		for (int[] line : sudoku) {
-			Set<Integer> SET = new HashSet<>();
+			Set<Integer> set = new HashSet<>();
 			for (int number : line) {
-				SET.add(number);
+				set.add(number);
 			}
-			if (SET.size() != 9) {
+			if (set.size() != 9) {
 				return false;
 			}
 		}

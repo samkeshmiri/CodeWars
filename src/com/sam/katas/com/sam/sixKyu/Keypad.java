@@ -12,10 +12,10 @@ public class Keypad {
 	public static int presses(String phrase) {
 		Map<String, Integer> map = loadMap();
 		int count = 0;
-		String[] arr = phrase.split("");
-		for (String s : arr) {
+		String[] arr = phrase.toUpperCase().split("");
+		for (String s : arr) { 
 			for (String x : map.keySet()) {
-				if (x.toUpperCase().contains(s.toUpperCase())) {
+				if (x.contains(s)) {
 					count += map.get(x);
 				}
 			}
