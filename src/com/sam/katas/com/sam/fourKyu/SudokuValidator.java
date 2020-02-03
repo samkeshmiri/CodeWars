@@ -21,15 +21,7 @@ public class SudokuValidator {
 	}
 
 	public static boolean check(int[][] sudoku) {
-
-		if (!checkRow(sudoku)) {
-			return false;
-		} else if (!checkColumn(sudoku)) {
-			return false;
-		} else if (!checkGrid(sudoku)) {
-			return false;
-		}
-		return true;
+		return checkRow(sudoku) && checkColumn(sudoku) && checkGrid(sudoku);
 	}
 
 	public static boolean checkColumn(int[][] sudoku) {
