@@ -8,17 +8,16 @@ public class WeightSort {
 	
 	public static String orderWeight(String string) {
 		String[] strings = string.split(" ");
-		ArrayList<String> strs = new ArrayList<>();
-		ArrayList<Integer> nums = new ArrayList<>();
+		ArrayList<String> stringsSplit = new ArrayList<>();
 		StringBuilder sb = new StringBuilder();
 		
 		for (int i = 0; i < strings.length; i++) {
-			strs.add(strings[i]);
+			stringsSplit.add(strings[i]);
 		}
 		
-		Collections.sort(strs);
+		Collections.sort(stringsSplit);
 		
-		Collections.sort(strs, new Comparator<String>(){
+		Collections.sort(stringsSplit, new Comparator<String>(){
 		    public int compare(String o1, String o2) {
 		    	Integer rank1 = String.valueOf(o1).chars().map(Character::getNumericValue).sum();
 				Integer rank2 = String.valueOf(o2).chars().map(Character::getNumericValue).sum();
@@ -34,7 +33,7 @@ public class WeightSort {
 		    }
 		});
 				
-		for (String x : strs) {
+		for (String x : stringsSplit) {
 			sb.append(x.toString() + " ");
 		}
 		
