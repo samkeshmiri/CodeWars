@@ -29,8 +29,10 @@ public class XbonacciFriends {
 		
 		while (list.size() < n) {
 			temp = 0;
+			System.out.println("out");
 			for (int i = length; i > 0; i -= 1) {
 				 temp += list.get(list.size()-i);
+				 System.out.println(temp);
 			}
 			list.add(temp);
 		}
