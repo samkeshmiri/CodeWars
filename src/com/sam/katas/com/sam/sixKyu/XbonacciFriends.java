@@ -9,8 +9,8 @@ import java.util.List;
 public class XbonacciFriends {
 
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(xbonacci(new double[] { 1, 1 }, 10)));
-		System.out.println(Arrays.toString(xbonacci(new double[] {1,0,0,0,0,0,1},10)));
+		System.out.println(Arrays.toString(xbonacci(new double[] { 1, 1 }, 1000)));
+		System.out.println(Arrays.toString(xbonacci(new double[] { 1,0,0,0,0,0,1 },10)));
 	}
 
 	public static double[] xbonacci(double[] signature, int n) {
@@ -29,10 +29,8 @@ public class XbonacciFriends {
 		
 		while (list.size() < n) {
 			temp = 0;
-			System.out.println("out");
 			for (int i = length; i > 0; i -= 1) {
 				 temp += list.get(list.size()-i);
-				 System.out.println(temp);
 			}
 			list.add(temp);
 		}

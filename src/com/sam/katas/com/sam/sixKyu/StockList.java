@@ -18,7 +18,6 @@ public class StockList {
 		for (int i = 0; i < lstOfArt.length; i++) {
 			String[] item = lstOfArt[i].split(" ");
 			String letter = Character.toString(item[0].charAt(0));
-			Integer amount = Integer.parseInt(item[1]);
 			if (map.containsKey(letter)) {
 				int books = Integer.parseInt(item[1]);
 				Integer total = Integer.valueOf(map.get(letter));

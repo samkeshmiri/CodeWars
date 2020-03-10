@@ -1,11 +1,13 @@
 package com.sam.sixKyu;
 
+import java.util.Arrays;
+
 // https://www.codewars.com/kata/556deca17c58da83c00002db/java
 
 public class Xbonacci {
 	
 	public static void main(String[] args) {
-		System.out.println(tribonacci(new double[] {1,1,1,}, 1));
+		System.out.println(Arrays.toString(tribonacci(new double[] {1,1,2},15)));
 	}
 	
 	public static double[] tribonacci(double[] s, int n) {
