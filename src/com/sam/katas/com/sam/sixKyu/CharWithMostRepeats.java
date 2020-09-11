@@ -1,5 +1,7 @@
 package com.sam.sixKyu;
 
+// https://www.codewars.com/kata/586d6cefbcc21eed7a001155/java
+
 public class CharWithMostRepeats {
 	
 	public static void main(String[] args) {
