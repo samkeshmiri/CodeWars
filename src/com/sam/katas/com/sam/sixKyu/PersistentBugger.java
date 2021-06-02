@@ -1,13 +1,19 @@
 package com.sam.sixKyu;
 
 import java.util.ArrayList;
-
+/**
+ * Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, 
+ * which is the number of times you must multiply the digits in num until you reach a single digit.
+ * @author s.keshmiri
+ *
+ */
 public class PersistentBugger {
 	static int count = 0;
 	
 	public static void main(String[] args) {
 		System.out.println(PersistentBugger.persistence(49581));
 		System.out.println(PersistentBugger.persistence(39));
+		System.out.println(PersistentBugger.persistence(999)); // 4
 	}
 	
 	public static int persistence(long n) {
