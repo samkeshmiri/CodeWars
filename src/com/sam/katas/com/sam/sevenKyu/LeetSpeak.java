@@ -1,7 +1,5 @@
 package com.sam.sevenKyu;
 
-import java.util.Map;
-
 /**
  * https://www.codewars.com/kata/57c1ab3949324c321600013f/solutions/java
  * 

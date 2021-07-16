@@ -11,7 +11,7 @@ import java.util.Set;
 public class StringAnalyzer {
     
 	public static void main(String[] args) {
-		System.out.println(getSubstrings("YOLO")); // 9
+		System.out.println(getSubstrings("")); // 9
 	}
 	
     private static int getSubstrings (String source) {
