@@ -1,34 +1,44 @@
 package com.sam.fiveKyu;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Scramblies {
 	
 	public static void main(String[] args) {
 		System.out.println(Scramblies.scramble("cedewaraaossoqqyt", "codewars"));
+		System.out.println(Scramblies.scramble("scriptjavx","javascript"));
 	}
 	
 	public static boolean scramble(String str1, String str2) {
 		
-		if (str2.length() > str1.length()) {
-			return false;
+		Map<String, Integer> map = new HashMap<>();
+		String[] arr = str1.split("");
+		String[] word = str2.split("");
+		
+		for (String s : arr) {
+			if(map.get(s) != null) {
+				int count = map.get(s);
+				count++;
+				map.put(s, count);
+			} else {
+				map.put(s, 1);
+			}
 		}
 		
-		char[] charr1 = str1.toCharArray();
-		char[] charr2 = str2.toCharArray();
+		for (String s : word) {
+			if (map.containsKey(s) && map.get(s) != 0) {
+				int count = map.get(s);
+				count--;
+				map.put(s, count);
+			} else {
+				return false;
+			}
+		}
 		
-		List<Character> list1 = new ArrayList<>();
-		List<Character> list2 = new ArrayList<>();
-		for (char c : charr1) list1.add(c);
-		for (char c : charr2) list2.add(c);
-		
-		list1.removeAll(new HashSet<Character>(list2));
-		
-		System.out.println();
+		System.out.println(map);
 
-		return false;
+		return true;
 	}
 
 }
