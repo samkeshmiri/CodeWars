@@ -3,8 +3,16 @@ package com.sam.fiveKyu;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/**
+ * Complete the function scramble(str1, str2) that returns true 
+ * if a portion of str1 characters can be rearranged to match str2, otherwise returns false.
+ * https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/java
+ * @author s.keshmiri
+ *
+ */
 public class Scramblies {
-	
+
 	public static void main(String[] args) {
 		System.out.println(Scramblies.scramble("cedewaraaossoqqyt", "codewars"));
 		System.out.println(Scramblies.scramble("scriptjavx","javascript"));
