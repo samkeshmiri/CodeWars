@@ -18,13 +18,9 @@ public class CamelCaseBuilder {
 
 	static String toCamelCase(String s) {
 		String[] arr = s.split("[-_]");
-		StringBuilder sb = new StringBuilder();
+		StringBuilder sb = new StringBuilder(arr[0]);
 
-		for (int i = 0; i < arr.length; i++) {
-			if (i == 0) {
-				sb.append(arr[0]);
-				continue;
-			}
+		for (int i = 1; i < arr.length; i++) {
 			String camelWord = arr[i].substring(0, 1).toUpperCase() + arr[i].substring(1);
 			sb.append(camelWord);
 		}
