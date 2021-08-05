@@ -1,3 +1,4 @@
+package com.sam.sixKyu;
 import java.util.Arrays;
 
 /**
@@ -19,7 +20,7 @@ public class EqualArraySides {
 		if (arr.length == 0) {
 			return 0;
 		}
-
+		
 		for (int i = 0; i < arr.length; i++) {
 			int left = Arrays.stream(arr, 0, i).sum();
 			int right = Arrays.stream(arr, i + 1, arr.length).sum();
