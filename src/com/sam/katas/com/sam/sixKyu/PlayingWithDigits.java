@@ -14,10 +14,6 @@ package com.sam.sixKyu;
  */
 public class PlayingWithDigits {
 	
-	public static void main(String[] args) {
-		System.out.println(digPow(3456789, 1));
-	}
-	
 	public static long digPow(int n, int p) {
 		
 		String numberString = Integer.toString(n);
