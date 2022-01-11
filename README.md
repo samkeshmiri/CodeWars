@@ -1,6 +1,6 @@
 # CodeWars Solutions & Ranking
 
-This repo demonstrates a range of skills in Java with each file representing a different task, known as 'katas'. 
+This repo demonstrates a range of skills in Java (and starting TypeScript) with each file representing a different task, known as 'katas'. 
 They are completed within an online integrated development environment with corresponding tests, which are ommitted in this repo. 
 
 All the solutions in this repo are written by myself.
