@@ -3,13 +3,13 @@
 class G964 {
 
     public static digPow = (n: number, p: number) => {
-        
+
         let numberAsString = n.toString();
         let exponent = p;
         let total = 0;
 
         for (let i = 0; i < numberAsString.length; i++) {
-            let num = +numberAsString[i];
+            let num = Number(numberAsString[i]);
 
             total += Math.pow(num, exponent);
             exponent++;
